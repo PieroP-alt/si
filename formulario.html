@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Formulario de pedidos de Venta en Línea"
+    >
+
+    <title>Pedido | Venta en Línea</title>
+
+    <link
+        rel="stylesheet"
+        href="formulario.css"
+    >
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="cabecera">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                Venta en Línea
+            </a>
+
+
+            <a
+                href="index.html"
+                class="volver"
+            >
+                ← Volver al inicio
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <section class="formulario-seccion">
+
+
+            <div class="formulario-introduccion">
+
+                <span class="etiqueta">
+                    FORMULARIO DIGITAL
+                </span>
+
+
+                <h1>
+
+                    Realiza tu
+
+                    <span>
+                        pedido
+                    </span>
+
+                </h1>
+
+
+                <p>
+
+                    Completa el formulario y déjanos tus
+                    datos. Nuestro equipo podrá comunicarse
+                    contigo para confirmar tu pedido.
+
+                </p>
+
+
+                <div class="beneficios">
+
+
+                    <div class="beneficio">
+
+                        <span>
+                            ⚡
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Atención rápida
+                            </strong>
+
+                            <p>
+                                Revisamos tu solicitud.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="beneficio">
+
+                        <span>
+                            🔒
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Datos protegidos
+                            </strong>
+
+                            <p>
+                                Tu información será tratada
+                                de manera responsable.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="beneficio">
+
+                        <span>
+                            💻
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Productos tecnológicos
+                            </strong>
+
+                            <p>
+                                Laptops, tablets y accesorios.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="formulario-contenedor">
+
+
+                <div class="formulario-cabecera">
+
+                    <span>
+                        NUEVA SOLICITUD
+                    </span>
+
+
+                    <h2>
+                        Información del cliente
+                    </h2>
+
+                </div>
+
+
+
+                <form id="formularioPedido">
+
+
+                    <div class="grupo">
+
+                        <label for="nombre">
+                            Nombre completo
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Ejemplo: Juan Pérez"
+                            required
+                        >
+
+
+                        <small>
+                            Escribe tu nombre completo.
+                        </small>
+
+                    </div>
+
+
+
+                    <div class="fila">
+
+
+                        <div class="grupo">
+
+                            <label for="correo">
+                                Correo electrónico
+                            </label>
+
+
+                            <input
+                                type="email"
+                                id="correo"
+                                name="correo"
+                                placeholder="correo@ejemplo.com"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <div class="grupo">
+
+                            <label for="telefono">
+                                Teléfono
+                            </label>
+
+
+                            <input
+                                type="tel"
+                                id="telefono"
+                                name="telefono"
+                                placeholder="987654321"
+                                required
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="fila">
+
+
+                        <div class="grupo">
+
+                            <label for="producto">
+                                Producto
+                            </label>
+
+
+                            <select
+                                id="producto"
+                                name="producto"
+                                required
+                            >
+
+                                <option value="">
+                                    Selecciona un producto
+                                </option>
+
+                                <option value="Laptop">
+                                    Laptop
+                                </option>
+
+                                <option value="Tablet">
+                                    Tablet
+                                </option>
+
+                                <option value="All in One">
+                                    All in One
+                                </option>
+
+                                <option value="Mouse">
+                                    Mouse
+                                </option>
+
+                                <option value="Otro">
+                                    Otro
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <div class="grupo">
+
+                            <label for="cantidad">
+                                Cantidad
+                            </label>
+
+
+                            <input
+                                type="number"
+                                id="cantidad"
+                                name="cantidad"
+                                min="1"
+                                max="100"
+                                value="1"
+                                required
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="grupo">
+
+                        <label>
+                            Tipo de pedido
+                        </label>
+
+
+                        <div class="opciones">
+
+
+                            <label class="opcion">
+
+                                <input
+                                    type="radio"
+                                    name="tipoPedido"
+                                    value="Por menor"
+                                    required
+                                >
+
+                                <span>
+                                    Por menor
+                                </span>
+
+                            </label>
+
+
+
+                            <label class="opcion">
+
+                                <input
+                                    type="radio"
+                                    name="tipoPedido"
+                                    value="Por mayor"
+                                >
+
+                                <span>
+                                    Por mayor
+                                </span>
+
+                            </label>
+
+
+
+                            <label class="opcion">
+
+                                <input
+                                    type="radio"
+                                    name="tipoPedido"
+                                    value="Unidad"
+                                >
+
+                                <span>
+                                    Unidad
+                                </span>
+
+                            </label>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="grupo">
+
+                        <label for="sucursal">
+                            Sucursal
+                        </label>
+
+
+                        <select
+                            id="sucursal"
+                            name="sucursal"
+                            required
+                        >
+
+                            <option value="">
+                                Selecciona una sucursal
+                            </option>
+
+                            <option value="Lima">
+                                Lima
+                            </option>
+
+                            <option value="Chiclayo">
+                                Chiclayo
+                            </option>
+
+                            <option value="Tarapoto">
+                                Tarapoto
+                            </option>
+
+                            <option value="Cajamarca">
+                                Cajamarca
+                            </option>
+
+                            <option value="Huancayo">
+                                Huancayo
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="grupo">
+
+                        <label for="mensaje">
+                            Mensaje
+                        </label>
+
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="5"
+                            placeholder="Escribe aquí alguna consulta sobre tu pedido..."
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <label class="terminos">
+
+                        <input
+                            type="checkbox"
+                            id="terminos"
+                            required
+                        >
+
+
+                        <span>
+
+                            Acepto que mis datos sean utilizados
+                            para responder a mi solicitud.
+
+                        </span>
+
+                    </label>
+
+
+
+                    <button
+                        type="submit"
+                        class="boton-enviar"
+                    >
+
+                        <span>
+                            Enviar solicitud
+                        </span>
+
+                        <strong>
+                            →
+                        </strong>
+
+                    </button>
+
+
+
+                    <div
+                        class="mensaje-exito"
+                        id="mensajeExito"
+                    >
+
+                        <div class="icono-exito">
+                            ✓
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Solicitud enviada
+                            </strong>
+
+
+                            <p>
+                                Gracias por contactarnos.
+                                Revisaremos tu solicitud.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>
+            © 2026 Venta en Línea
+        </p>
+
+
+        <a href="index.html">
+            Página principal
+        </a>
+
+    </footer>
+
+
+
+    <button
+        class="boton-modo"
+        id="botonModo"
+        aria-label="Cambiar modo"
+    >
+        🌙
+    </button>
+
+
+
+    <script src="formulario.js"></script>
+
+</body>
+
+</html>
